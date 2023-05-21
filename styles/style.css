@@ -5,12 +5,12 @@
 
 @font-face {
     font-family: Gotham-medium;
-    src: url(/fonts/Gotham-Medium.otf)
+    src: url(../fonts/Gotham-Medium.otf)
 }
 
 @font-face {
     font-family: Gotham-book;
-    src: url(/fonts/Gotham-Book-Regular.otf);
+    src: url(../fonts/Gotham-Book-Regular.otf);
 }
 
 body{
@@ -135,7 +135,7 @@ h1.title{
 h1.title::before{
     content:"";
     /* display:inline-block; */
-    background-image: url(/img/arrow_rose.png);
+    background-image: url(../img/arrow_rose.png);
     
     background-repeat: no-repeat;
     height:35px;
@@ -151,7 +151,7 @@ span.rose_line_1{
     /* display:inline-block; */
     width:180px;
     height:12px;
-    background-image: url(/img/linea_rose_1.png);
+    background-image: url(../img/linea_rose_1.png);
     background-repeat: no-repeat;
     top:42px;
     position: absolute;
@@ -162,7 +162,7 @@ span.rose_line_2{
    /*  display:inline-block; */
     width:110px;
     height:20px;
-    background-image: url(/img/linea_rose_2.png);
+    background-image: url(../img/linea_rose_2.png);
     background-repeat: no-repeat;
     top:90px;
     position: absolute;
@@ -219,7 +219,7 @@ h2.second-part-h2{
     /*  display:inline-block; */
     width:110px;
     height:20px;
-    background-image: url(/img/linea_rose_2.png);
+    background-image: url(../img/linea_rose_2.png);
     background-repeat: no-repeat;
     top:40px;
     position: absolute;
@@ -283,7 +283,7 @@ h2.second-part-h2{
 } */
 
 .bg-2{
-    background-image: url(/img/bg-2-blue.png);
+    background-image: url(../img/bg-2-blue.png);
     background-repeat: no-repeat;
     background-size: auto;
     padding-top:60px;
