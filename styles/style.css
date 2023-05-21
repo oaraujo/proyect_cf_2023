@@ -118,6 +118,7 @@ img{
     display:flex;
     flex-direction: column;
     gap: 34px;
+    align-items: center;
 }
 
 h1.title{
@@ -127,6 +128,7 @@ h1.title{
     word-spacing: 0.1em;
     position:relative;
     letter-spacing: 0.5px;
+    width: 90%;
     /* border: 1px solid red; */
 }
 
@@ -177,8 +179,8 @@ span.rose_line_2{
     line-height: 20px;
     font-size: 12px;
     font-weight: 500;
-    max-width:360px;
-    width:100%;
+    /* max-width:360px; */
+    width:88%;
 
 
 }
@@ -208,7 +210,7 @@ span.rose_line_2{
 }
 
 h2.second-part-h2{
-    font-size: 39px;
+    font-size: 2.5rem;
     padding-left:10px;
     letter-spacing: 0.5px;
     text-align: center;
@@ -233,7 +235,8 @@ h2.second-part-h2{
     font-size:12px;
     font-weight: 500;
     text-align: center;
-    width:268px;
+    /* width:268px; */
+    padding: 0px 40px;
 
 }
 
@@ -281,6 +284,63 @@ h2.second-part-h2{
     background-size: cover;
     
 } */
+
+/* Inicio de la seccion 3 de la landing */
+.third-part{
+    margin-top: 45px;
+    display:flex;
+    flex-direction: column;
+}
+.text-third-part{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    position:relative;
+}
+.text-third-part h2{
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 0.5px;
+    /* max-width:350px; */
+    width:100%;
+    margin-bottom:35px;
+    line-height: 55px;
+}
+
+.circle-img{
+    display:block;
+    background-image: url(../img/circle_text.svg);
+    position:absolute;
+    width:137px;
+    height:49px;
+    left:11%;
+}
+
+.list-ventajas {
+    list-style-type: none;
+    position:relative;
+    padding:0px;
+    font-size: 12px;
+}
+
+.list-ventajas li{
+    margin-bottom:12px;
+    padding-left:30px;
+}
+
+.list-ventajas :last-child{
+    margin-bottom:40px;
+}
+
+.list-ventajas li::before{
+    content:"";
+    display:inline-block;
+    width:15px;
+    height:15px;
+    background-image: url(../img/ESTRELLA.png);
+    margin-right: 5px;
+}
 
 .bg-2{
     background-image: url(../img/bg-2-blue.png);
