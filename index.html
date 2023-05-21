@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WaiterUp</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link href="https://fonts.cdnfonts.com/css/dwerneck" rel="stylesheet">
+                
+</head>
+<body>
+    <main>
+       <!--  <div class="bg-1"> -->
+            <nav class="nav_bar container">
+                <img class="img-logo" src="/img/logo.svg" alt="logo">
+            
+                <button class="btn_menu_hamb"><img src="/img/btn_menu_hamb.svg" alt="menu_hamburguesa"></button>
+                <div class="dropdown-list">
+                    <a href="#" class="dropdown-item">Camareros</a>
+                    <a href="#" class="dropdown-item">Team</a>
+                    <a href="#" class="dropdown-item">Clientes</a>
+                    <a href="#" class="dropdown-item">Restaurantes</a>
+                    <a href="#" class="dropdown-item">FAQS</a>
+                    <button class="login-btn">Inicio de Sesion</button>
+                    <button class="team-btn">Team</button>
+                </div>
+            </nav>
+            <section class="hero container">
+                <div class="texts">
+                    <h1 class="title">
+                        <!-- La hostelería 2.0,ya está aquí -->
+                        La <span class="rose_line_1"></span>Hosteleria 2.0
+                        ya esta <span class="rose_line_2"></span>aqui.
+                    </h1>
+                    <p class="sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.</p>
+                </div>
+                <figure class="hero-img-container">
+                    <img src="/img/hero_img.png" alt="movil_hero">
+                </figure>
+                <div class="app-button">
+                    <a href="#">
+                        <figure class="">
+                            <img src="/img/google_play.png" alt="">
+                        </figure>
+                    </a>
+            
+                    <a href="#">
+                        <figure>
+                            <img src="/img/app_store.png" alt="">
+                        </figure>
+                    </a>
+                </div>
+            </section>
+            <section class="second-part container">
+                <div class="container-second-text">
+                    <h2 class="second-part-h2">
+                        Al <span class="rose_line_3"></span>César lo que
+                        es del <span class="rose_line_4"></span>César
+                    </h2>
+                    <p>
+                        WaiterUp es una plataforma diseñada por
+                            camareros, para camareros.
+                             <span class="aditional-text">
+                                 Queremos ayudar a mejorar nuestras
+                                 condiciones laborales, y a darle el peso que
+                                 se merece a una profesión maltratada.
+                             </span>
+                    </p>
+                </div>
+                <figure>
+                    <img src="/img/img-section2.png" alt="">
+                </figure>
+                <div class="sub-section-2">
+                    <figure>
+                        <img src="/img/arrow_green.png" alt="flecha" class="arrow-green">
+                    </figure>
+                    <p class="extratext">
+                        Propinas y mas propinas
+                    </p>
+                </div>
+                <button class="btn-sec2">Saber mas</button>
+            </section>
+        <!-- </div> -->
+
+        <section class="bg-2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In architecto deserunt, facilis, magni nulla minima consequuntur et eveniet ducimus, nemo at aliquid error atque nobis porro voluptate. Velit corporis ipsum accusantium temporibus nobis explicabo ad quasi deserunt nisi cum, dicta facilis error animi facere dolorum vero qui quo id repellat?</p>
+
+        </section>
+    </main>
+</body>
+
+<script>
+    let trigger = document.querySelector(".btn_menu_hamb");
+    let menu = document.querySelector(".dropdown-list");
+
+    trigger.addEventListener('click',()=>{
+        menu.classList.toggle('show')
+    })
+
+    console.log(trigger);
+</script>
+</html>
