@@ -85,9 +85,10 @@ img{
     border-radius: 0.625rem;
     background-color: #55917C;
     gap:10px;
-    z-index: 9999;
+    z-index: 1;
     overflow: visible;
     padding:20px 0px;
+    backdrop-filter: blur(4px);
 }
 
 .dropdown-item{
@@ -106,6 +107,7 @@ img{
 .show{
     display:flex;
     transition: 0.7 ease;
+    
 }
 
 .hero{
@@ -232,7 +234,7 @@ h2.second-part-h2{
 
 .container-second-text p{
     margin:37px auto 0px auto;
-    font-size:12px;
+    font-size:0.75rem;
     font-weight: 500;
     text-align: center;
     /* width:268px; */
@@ -342,6 +344,13 @@ h2.second-part-h2{
     margin-right: 5px;
 }
 
+.btn-sec-3{
+    margin-top:10px;
+    display:block;
+    margin:15px auto 0px auto;
+}
+
+/* comienzo de la seccion 4 */
 .bg-2{
     background-image: url(../img/bg-2-blue.png);
     background-repeat: no-repeat;
@@ -352,3 +361,81 @@ h2.second-part-h2{
     
 }
 
+.text-sec-4{
+    padding:0 25px;
+}
+.text-sec-4 h2{
+    font-size: 2.5rem;
+    margin-bottom:10px;
+    color: white;
+}
+.text-sec-4 h2 span{
+    color: #CE9EC8;
+}
+
+.text-sec-4 p{
+    line-height: 30px;
+    color: white;
+    font-size:0.75rem;
+    margin-bottom: 40px;
+}
+
+.subsec-4-flex{
+    display:flex;
+}
+
+.sub-sec4-div{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:30px;
+}
+
+.sub-sec4-div p{
+    font-family: Gotham-book;
+    font-size: 0.75rem;
+    color:#CD9EC9;
+    margin-top: 40px;
+}
+
+.sub-sec4-div button{
+    display:block;
+    margin:0 auto;
+}
+
+
+/* Ultima seccion footer y demas quiero hacer mas efectos CSS y cositas con JS */
+
+.bg-3 {
+    background-image: url(../img/bg-3-green.png);
+    /* height:1300px; */
+    /* border: 1px solid greenyellow; */
+    background-position: center bottom;
+    display:flex;
+    flex-direction: column;
+    padding:15px;
+}
+
+a {
+    display:block;
+    color:white;
+    text-decoration: none;
+}
+
+h3{
+    color:#CE9EC8;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding:10px 0px;
+}
+
+.sec-logo-footer{
+    margin-top:30px;
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+.elements-footer{
+    line-height: 30px;
+}
