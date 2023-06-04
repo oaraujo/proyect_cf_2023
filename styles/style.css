@@ -32,6 +32,15 @@ main{
     
 }
 
+.backdrop-filter{
+    position: fixed;
+    top: center;
+    left: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    backdrop-filter: blur(4px);
+}
 .container{
     width:90%;
     margin:0 auto;
@@ -85,11 +94,13 @@ img{
     border-radius: 0.625rem;
     background-color: #55917C;
     gap:10px;
-    z-index: 1;
+    z-index: 2;
     overflow: visible;
     padding:20px 0px;
-    backdrop-filter: blur(4px);
+    /* backdrop-filter: blur(4px); */
 }
+
+
 
 .dropdown-item{
     text-transform: uppercase;
@@ -104,14 +115,101 @@ img{
     
 }
 
+.btn-nav{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
 .show{
     display:flex;
     transition: 0.7 ease;
     
 }
 
+.extra-text-hero{
+    display:none;
+}
+
+@media (min-width:1000px) {
+    
+    main{
+    max-width:1600px;
+    }
+
+    .nav_bar{
+        background-color:transparent;
+        display:flex;
+        justify-content: space-between;
+        width:90%;
+        gap:20px;
+       /*  border:1px solid red; */
+       margin-top:0px;
+       padding-top:2rem;
+        
+    }
+    
+    .btn_menu_hamb{
+        display:none;
+    }
+
+    .dropdown-list{
+        display:flex;
+        flex-direction: row;
+        background-color: transparent;
+        position: static;
+        justify-content: flex-end;
+        gap:20px;
+        margin-top:0px;
+        border:none;
+        color:black;
+    }
+
+    .btn-nav{
+        display:flex;
+        flex-direction: row;
+        /* gap:15px; */
+    }
+
+    .backdrop-filter{
+        display:none;
+    }
+
+    .dropdown-item{
+        color:black;
+        text-transform: capitalize;
+    }
+}
+
+@media (min-width:1200px) {
+    .dropdown-list{
+        gap:40px;
+    }
+
+    .extra-text-hero{
+        display:block;
+    }
+
+    .btn-hero{
+        display:block;
+    }
+}
+
+@media (min-width:1400px) {
+    .dropdown-list{
+        gap:80px;
+    }
+}
+
+
+
+
+/* Aqui comienza la seccion de hero */
+
 .hero{
     margin:0 auto;
+    display:flex;
+    flex-direction: column;
 }
 
 .texts{
@@ -121,6 +219,10 @@ img{
     flex-direction: column;
     gap: 34px;
     align-items: center;
+}
+
+.btn-hero{
+    display:none;
 }
 
 h1.title{
@@ -351,7 +453,7 @@ h2.second-part-h2{
 }
 
 /* comienzo de la seccion 4 */
-.bg-2{
+.bg-4{
     background-image: url(../img/bg-2-blue.png);
     background-repeat: no-repeat;
     background-size: auto;
@@ -444,4 +546,264 @@ h3{
 
 .elements-footer{
     line-height: 30px;
+}
+
+@media (min-width:1000px) {
+    
+    main{
+    max-width:1600px;
+    }
+
+    .nav_bar{
+        background-color:transparent;
+        display:flex;
+        justify-content: space-between;
+        width:90%;
+        gap:20px;
+       /*  border:1px solid red; */
+       margin-top:0px;
+       padding-top:2rem;
+        
+    }
+    
+    .btn_menu_hamb{
+        display:none;
+    }
+
+    .dropdown-list{
+        display:flex;
+        flex-direction: row;
+        background-color: transparent;
+        position: static;
+        justify-content: flex-end;
+        gap:20px;
+        margin-top:0px;
+        border:none;
+        color:black;
+    }
+
+    .btn-nav{
+        display:flex;
+        flex-direction: row;
+        /* gap:15px; */
+    }
+
+    .backdrop-filter{
+        display:none;
+    }
+
+    .dropdown-item{
+        color:black;
+        text-transform: capitalize;
+    }
+}
+
+@media (min-width:1200px) {
+   /*  Aqui comienza la parte Hero */
+    
+    .dropdown-list{
+        gap:40px;
+    }
+
+
+
+    .btn-hero{
+        display:block;
+    }
+
+    .hero{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 86vh;
+        margin-top:30px;
+    }
+
+    .texts{
+        width:40%;
+        justify-content: space-evenly;
+        gap:20px;
+    }
+
+    .texts p{
+        text-align: left;
+        margin:0 auto;
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    h1.title::before{
+        display:none;
+    }
+
+    .extra-text-hero{
+        display:block;
+    }
+
+    .hero-img-container{
+        width:50%;
+        margin-left:auto;
+    }
+
+    .app-button{
+        margin-top:0px;
+        width:90%;
+        /* margin-top:15px; */
+        justify-content: right;
+    }
+
+    .google-btn{
+        padding-right: 20px;
+    }
+
+    /* Inicio de la segunda seccion web */
+
+    .second-part{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top:0px;
+    }
+
+    .container-second-text{
+        order:2;
+        width:50%;
+
+    }
+
+    .img-container-second-section{
+        order:1;
+        width:50%;
+        
+    }
+
+    .sub-section-2{
+        order:3;
+        margin:0 auto;
+    }
+
+    .extratext{
+        width:80%;
+    }
+
+    .arrow-green{
+        top: 10px;
+    }
+
+    .btn-sec2{
+        display:block;
+        order:4;
+        width:200px;
+        margin-top:-30px;
+    }
+
+    /* Inicio Tercera section web */
+    .third-part{
+        flex-direction: row;
+        margin-top:90px;
+        flex-wrap: wrap;
+    }
+
+    .text-third-part{
+        width:50%;
+    }
+
+    .circle-img{
+        left:5%;
+    }
+
+    .list-ventajas{
+        margin:0 50px;
+    }
+
+    .img-sec3-figure{
+        width:50%
+    }
+
+    .container-btn-sec3{
+        width:50%;
+        height: 100px;
+        margin-top: -115px;
+        z-index: 1;
+    }
+    .btn-sec-3{
+        width:171px;
+        height: 40px;
+}
+
+    /* Seccion 4 landing */
+
+    .bg-4{
+        background-image: url(../img/bg-3blu-web.png);
+        background-size: cover;
+        height:100%;
+        background-position: 0 0;
+    }
+
+
+    
+    .section-4{
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+    .text-sec-4{
+        order:2;
+        width:50%;
+        margin-top:15%;
+    }
+
+    .section-4 figure{
+        width:50%;
+        order:1;
+        padding-top:10%;
+        
+        
+    }
+
+    .subsec-4-flex{
+        order:3;
+    }
+
+    .movil-img{
+        display:none;
+    }
+   .sub-sec4-div{
+    flex-direction: row;
+    justify-content: end;
+   }
+
+   .item:not(:first-child){
+    margin-left:20px;
+   }
+ 
+    /* Aqui haria el footer */
+
+    .footer{
+        display:flex;
+        flex-direction: row;
+    }
+
+    .sec-logo-footer{
+        margin-left:10%;
+    }
+
+    .elements-footer{
+        display:flex;
+        flex-direction: row;
+        gap:80px;
+    }
+}
+
+@media (min-width:1400px) {
+    .dropdown-list{
+        gap:80px;
+    }
+
+    .texts p{
+        font-size: 15px;
+}
 }

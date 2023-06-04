@@ -12,6 +12,7 @@
 </head>
 <body>
     <main>
+        
        <!--  <div class="bg-1"> -->
             <nav class="nav_bar container">
                 <img class="img-logo" src="./img/logo.svg" alt="logo">
@@ -23,10 +24,14 @@
                     <a href="#" class="dropdown-item">Clientes</a>
                     <a href="#" class="dropdown-item">Restaurantes</a>
                     <a href="#" class="dropdown-item">FAQS</a>
-                    <button class="login-btn">Inicio de Sesion</button>
-                    <button class="team-btn">Team</button>
+                    <div class="btn-nav">
+                        <button class="login-btn">Inicio de Sesion</button>
+                        <button class="team-btn">Team</button>
+                    </div>
                 </div>
             </nav>
+
+            <div class="backdrop"></div>
             <section class="hero container">
                 <div class="texts">
                     <h1 class="title">
@@ -34,16 +39,24 @@
                         La <span class="rose_line_1"></span>Hosteleria 2.0
                         ya esta <span class="rose_line_2"></span>aqui.
                     </h1>
-                    <p class="sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.</p>
+                    <div>
+                        <p class="sub-title">Dicen que si quieres algo bien hecho, tienes que hacerlo tú mismo…
+                            Y eso hicimos.
+                            </p>
+                        <p class="extra-text-hero sub-title">
+                        
+                            Descubre nuestra app para profesionalizar la hostelería a través
+                            de valoraciones, opiniones, propinas, ¡y mucho más!
+                        </p>
+                    </div>
+                    <button class="btn-hero">Descarga prueba Gratuita</button>
                 </div>
                 <figure class="hero-img-container">
                     <img src="./img/hero_img.png" alt="movil_hero">
                 </figure>
                 <div class="app-button">
                     <a href="#">
-                        <figure class="">
+                        <figure class="google-btn">
                             <img src="./img/google_play.png" alt="">
                         </figure>
                     </a>
@@ -56,7 +69,7 @@
                 </div>
             </section>
             <section class="second-part container">
-                <div class="container-second-text">
+                <div class="container-second-text" >
                     <h2 class="second-part-h2">
                         Al <span class="rose_line_3"></span>César lo que
                         es del <span class="rose_line_4"></span>César
@@ -71,7 +84,7 @@
                              </span>
                     </p>
                 </div>
-                <figure>
+                <figure class="img-container-second-section">
                     <img src="./img/img-section2.png" alt="">
                 </figure>
                 <div class="sub-section-2">
@@ -103,74 +116,82 @@
                 </ul>
 
             </div>
-            <figure>
+            <figure class="img-sec3-figure">
                 <img src="./img/figure-section3.png" alt="imagen_ilustracion">
             </figure>
 
-            <button class="btn-sec-3">Saber mas</button>
+            <div class="container-btn-sec3">
+                <button class="btn-sec-3">
+                    Saber mas
+                </button>
+            </div>
         
         </section>
 
-        <section class="bg-2">
+        <section class="bg-4">
             
-            <div class="text-sec-4 container">
-                <h2><span>¡Hola WaiterUp,</span> 
-                    adiós problemas!</h2>
-                <p>¿Dificultades para encontrar buenos trabajadores?</br>
-                    ¿Dudas sobre el rendimiento del equipo? </br>
-                    ¿Dolores de cabeza por gestionar propinas?</p>
-            </div>
-
-            <figure class="container">
-                <img src="./img/img-sec4.png" alt="pc">
-            </figure>
-
-            <div class="subsec-4-flex container">
-                <figure>
-                    <img src="./img/movil-flecha-img-sec4.png" alt="movil-flecha-img-sec4">
+            <div class="section-4">
+                <div class="text-sec-4 container">
+                    <h2><span>¡Hola WaiterUp,</span>
+                        adiós problemas!</h2>
+                    <p>¿Dificultades para encontrar buenos trabajadores?</br>
+                        ¿Dudas sobre el rendimiento del equipo? </br>
+                        ¿Dolores de cabeza por gestionar propinas?</p>
+                </div>
+                <figure class="container">
+                    <img src="./img/img-sec4.png" alt="pc">
                 </figure>
-
-                <div class="sub-sec4-div">
-                    <p >DISEÑADA PARA
-                        GESTIONAR MÁS, Y MEJOR</p>
-                        <button >Saber mas</button>
-                        <figure>
-                            <img src="./img/powered-by-uxui.png" alt="powered-by-uxui">
-                        </figure>
+                <div class="subsec-4-flex container">
+                    <figure class="movil-img">
+                        <img src="./img/movil-flecha-img-sec4.png" alt="movil-flecha-img-sec4">
+                    </figure>
+                    <div class="sub-sec4-div">
+                        <p class="item">DISEÑADA PARA
+                            GESTIONAR MÁS, Y MEJOR</p>
+                            <button class="item" >Saber mas</button>
+                            <figure class="item">
+                                <img src="./img/powered-by-uxui.png" alt="powered-by-uxui">
+                            </figure>
+                    </div>
                 </div>
             </div>
 
         </section>
-        <section class="bg-3">
-            <div class="sec-logo-footer container">
-                <img src="./img/LOGO-EN-BLANCO.svg" alt="">
-                <a href="#">Español</a>
-                <a href="#">FAQ</a>
-            </div>
-            <div class="elements-footer container">
-                <h3>
-                    TÉRMINOS Y CONDICIONES
-                </h3>
-                <a href="">Política de privacidad</a>
-                <a href="">Aviso legal</a>
-                <a href="">Politica de cookies</a>
-                <a href="">Cambiar preferencias cookies</a>
-
-                <h3>
-                    Soporte y ayuda
-                </h3>
-                <a href="">Preguntas frecuentes</a>
-                <a href="">Chat</a>
-                <a href="">ayuda@waiterup.com</a>
-
-                <h3>
-                    Seguridad
-                </h3>
-                <a href="">Seguridad y claves</a>
-                <a href="">Proteccion de datos</a>
-                <a href="">Condiciones legales</a>
-                <a href="">Cambiar preferencias cookies</a>
-        
+        <section class=" bg-3">
+            <div class="footer container">
+                <div class="sec-logo-footer container">
+                    <img src="./img/LOGO-EN-BLANCO.svg" alt="">
+                    <a href="#">Español</a>
+                    <a href="#">FAQ</a>
+                </div>
+                <div class="elements-footer container">
+                    <div>
+                        <h3>
+                            TÉRMINOS Y CONDICIONES
+                        </h3>
+                        <a href="">Política de privacidad</a>
+                        <a href="">Aviso legal</a>
+                        <a href="">Politica de cookies</a>
+                        <a href="">Cambiar preferencias cookies</a>
+                    </div>
+                    <div>
+                        <h3>
+                            Soporte y ayuda
+                        </h3>
+                        <a href="">Preguntas frecuentes</a>
+                        <a href="">Chat</a>
+                        <a href="">ayuda@waiterup.com</a>
+                    </div>
+                    <div>
+                        <h3>
+                            Seguridad
+                        </h3>
+                        <a href="">Seguridad y claves</a>
+                        <a href="">Proteccion de datos</a>
+                        <a href="">Condiciones legales</a>
+                        <a href="">Cambiar preferencias cookies</a>
+                    </div>
+                </div>
             </div>
 
         </section>
@@ -180,9 +201,12 @@
 <script>
     let trigger = document.querySelector(".btn_menu_hamb");
     let menu = document.querySelector(".dropdown-list");
+    let filtro = document.querySelector(".backdrop")
 
     trigger.addEventListener('click',()=>{
         menu.classList.toggle('show')
+        filtro.classList.toggle('backdrop-filter')
+
     })
 
     console.log(trigger);
